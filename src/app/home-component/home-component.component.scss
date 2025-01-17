@@ -1,0 +1,74 @@
+/* app.component.css */
+
+.toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.links {
+    display: flex;
+}
+
+.links a {
+    margin-left: 35px;
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.contact-info {
+    font-size: 25px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-right: 50px;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+    .toolbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+
+    .links a {
+        margin: 10px 0;
+    }
+
+    .contact-info {
+        margin-top: 20px;
+    }
+}
+.footer {
+    height: 130px;
+    background-color: #4d3d37;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Adjust padding as needed */
+  }
+  
+  .footer p {
+    color: white;
+    font-size: smaller;
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .footer {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: auto; /* Auto height to accommodate content */
+    }
+  
+    .footer p {
+      margin-top: 10px;
+      margin-left: 20px; /* Adjust margin for spacing */
+    }
+  }

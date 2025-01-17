@@ -1,0 +1,74 @@
+<mat-toolbar class="toolbar">
+    <img src="assets\pics\logo.png" alt="" height="120px" routerLink="/Home" style="cursor: pointer;">
+    <div class="links">
+        <a routerLink="/Home">Home</a>
+        <a routerLink="/Home/OpeningHours">Opening Hours</a>
+        <a routerLink="/Home/Menu&Pricing">Our Menu&Pricing</a>
+        <a routerLink="/Home/AboutUs">About Us</a>
+        <a routerLink="/Home/ContactUs" style="text-decoration: underline;"><b>Contact Us</b></a>
+    </div>
+    <p class="contact-info"><b>01416111774</b></p>
+</mat-toolbar>
+<div class="contact-section">
+  <div>
+      <mat-icon>location_on</mat-icon>
+      <div>
+          <h2>Supreme Spot</h2>
+          <p>6 Vicarage Street,</p>
+          <p>Frome, Somerset, </p>
+          <p> BA11 1PX</p>
+          <p>United Kingdom</p>
+      </div>
+  </div>
+  <div>
+      <mat-icon>phone</mat-icon>
+      <div>
+          <h3>Mr. Adrian Venoin</h3>
+          <p>0141 611 1774</p>
+          <p>Fast Food Restaurant</p>
+      </div>
+  </div>
+  <div>
+      <mat-icon>email</mat-icon>
+      <div>
+          <h3>Customer email</h3>
+          <p><a href="mailto:{{ emailAddress1 }}">{{ emailAddress1 }}</a></p>
+          <h3>Online order email</h3>
+          <p><a href="mailto:{{ emailAddress1 }}">{{ emailAddress1 }}</a></p>
+      </div>
+  </div>
+</div>
+
+<div class="message-container">
+    <div>
+      <h2>Message Us</h2>
+      <p>Feel free to reach out to us! Whether you have questions, <br> feedback, or need assistance, we're here to help. Your <br> messages are important to us, and we'll respond promptly. <br> Thank you for getting in touch!</p>
+    </div>
+    <div style="margin-left: 300px;">
+        <h3>Full Name:</h3>
+        <mat-form-field>
+          <mat-label>Enter your Full Name</mat-label>
+          <input matInput [formControl]="nameFormControl">
+          <mat-error>{{nameError}}</mat-error>
+        </mat-form-field>
+        <h3>Email:</h3>
+        <mat-form-field>
+          <mat-label>Enter your email</mat-label>
+          <input matInput [formControl]="email" required>
+          <mat-error *ngIf="email.invalid">{{getErrorEmailMessage()}}</mat-error>
+        </mat-form-field>
+        <h3>Message: </h3>
+        <mat-form-field>
+          <mat-label>Your Review</mat-label>
+          <textarea matInput></textarea>
+        </mat-form-field>
+        <button mat-raised-button style="background-color: #4d3d37;color: white;width: 70px;margin-top: 150px;margin-left: -200px;"><b>Submit</b></button>
+      </div>
+</div>
+  <br>
+  <br>
+  <footer class="footer">
+    <p style="margin-top: -40px;margin-left: 40px;">Copyright © 2023 Yamm Buffet - All Rights Reserved.</p>
+    <p routerLink="/Home/PrivacyPolicy" style="margin-left: -80px;margin-top: 80px;cursor: pointer;">PRIVACY POLICY</p>
+    <p style="margin-top: -40px;margin-right: 120px;">Powered by GoDaddy Website Builder</p>
+</footer>

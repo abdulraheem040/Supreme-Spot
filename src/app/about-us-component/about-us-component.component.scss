@@ -1,0 +1,139 @@
+/* app.component.css */
+
+.toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.links {
+    display: flex;
+}
+
+.links a {
+    margin-left: 35px;
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.contact-info {
+    font-size: 25px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-right: 50px;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+    .toolbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+
+    .links a {
+        margin: 10px 0;
+    }
+
+    .contact-info {
+        margin-top: 20px;
+    }
+}
+.footer {
+    height: 130px;
+    background-color: #4d3d37;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Adjust padding as needed */
+  }
+  
+  .footer p {
+    color: white;
+    font-size: smaller;
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .footer {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: auto; /* Auto height to accommodate content */
+    }
+  
+    .footer p {
+      margin-top: 10px;
+      margin-left: 20px; /* Adjust margin for spacing */
+    }
+  }
+
+  .content {
+    margin-left: 8%;
+    letter-spacing: 0.1em;
+    margin-top: 70px;
+    display: flex;
+  }
+  
+  .content > div {
+    flex: 1;
+  }
+  
+  .content > div:nth-child(2) {
+    margin-left: 20px;
+  }
+  
+  .content > div:nth-child(2) img {
+    margin-left: 0;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .content {
+      flex-direction: column;
+      margin-top: 0;
+    }
+  
+    .content > div {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  
+    .content > div:nth-child(2) img {
+      margin-left: 0;
+    }
+  
+    .content > div:nth-child(2) {
+      margin-left: 0;
+    }
+  }
+  .hero-section {
+    float: right;
+    margin-right: 250px;
+  }
+  
+  .hero-section .organic {
+    color: #4d3d37;
+    margin-left: 5px;
+  }
+  
+  .hero-section .product {
+    color: #4d3d37;
+  }
+  
+  button {
+    margin-left: 50px;
+    margin-top: 30px;
+    
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .hero-section {
+      margin-right: 40px; /* Adjust margin-right for small screens */
+    }
+  }
+  
