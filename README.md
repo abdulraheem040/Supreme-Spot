@@ -1,6 +1,4 @@
 
-![Uploading WhatsApp Image 2025-03-17 at 23.22.17_b2d3601f.jpg…]()
-
 
 
 
